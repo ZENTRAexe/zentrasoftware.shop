@@ -1,25 +1,9 @@
- <!-- HERO -->
-<div class="hero">
-
-
-
-  <!-- ÖN PLAN LOGO -->
-  <video class="logo-video" autoplay muted loop playsinline>
-    <source src="WhatsApp Video 2026-01-20 at 01.53.41.mp4" type="video/mp4">
-  </video>
-
-  <h1>ZENTRA MARKET</h1>
-  <p>Discord üzerinden profesyonel dijital satış</p>
-
-  <div class="status">
-    <span></span> ONLINE • SATIŞ AKTİF
-  </div>
-
-  <br>
-  <a href="https://discord.gg/BavNPK942y" class="btn">DİSCORD'A KATIL</a>
-
-</div>
-  
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZENTRA MARKET</title>
 
 <style>
 :root{
@@ -29,40 +13,6 @@
   --purple2:#b100ff;
   --text:#eaeaea;
   --green:#00ff9c;
-}
-  /* ÇERÇEVELİ HERO ALANI */
-.hero{
-  position:relative;
-  margin:40px auto;
-  max-width:1100px;
-  padding:80px 20px;
-  border-radius:22px;
-  border:1.5px solid #2b0055;
-  box-shadow:
-    inset 0 0 0 1px #1a0033,
-    0 0 40px #3a006640;
-  overflow:hidden;
-  background:#07070c;
-}
-
-/* BLUR’LU ARKA PLAN VIDEO */
-.hero-bg-video{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:0.10;
-  filter: blur(22px) saturate(120%);
-  transform: scale(1.25);
-  pointer-events:none;
-  z-index:0;
-}
-
-/* ÖN PLAN İÇERİK */
-.hero > *{
-  position:relative;
-  z-index:1;
 }
 
 *{box-sizing:border-box}
@@ -74,52 +24,46 @@ body{
   color:var(--text);
 }
 
+/* ORTALAYICI */
 .container{
   max-width:1100px;
-  margin:auto;
+  margin:0 auto;
   padding:40px 20px;
 }
 
-h1,h2,h3{
-  color:var(--purple2);
-}
-
+/* HERO */
 .hero{
   text-align:center;
-  padding:90px 20px;
+  position:relative;
+  padding:80px 20px;
+  border-radius:22px;
+  border:1.5px solid #2b0055;
+  box-shadow:
+    inset 0 0 0 1px #1a0033,
+    0 0 40px #3a006640;
+  background:#07070c;
+  overflow:hidden;
+  margin-bottom:80px;
+}
+
+.logo-video{
+  width:140px;
+  margin:0 auto 20px;
+  display:block;
+  border-radius:12px;
+  filter:drop-shadow(0 0 25px #7a00ff60);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-6px)}
 }
 
 .hero h1{
   font-size:50px;
   letter-spacing:2px;
-}
-  /* TÜM KARTLAR AYNI YÜKSEKLİK */
-.cards{
-  align-items: stretch;
-}
-
-.card{
-  display:flex;
-  flex-direction:column;
-}
-
-/* RESİM ALANI SABİT */
-.card-img{
-  height:220px;
-  object-fit:contain;
-  background:#0b0b16;
-}
-
-/* İÇERİK ALANI ESNEK */
-.card-content{
-  flex:1;
-  display:flex;
-  flex-direction:column;
-}
-
-/* SATIN AL BUTONU EN ALTA SABİTLENİR */
-.card-content a{
-  margin-top:auto;
+  color:var(--purple2);
 }
 
 .hero p{
@@ -138,34 +82,7 @@ h1,h2,h3{
   color:var(--green);
   font-weight:bold;
 }
-.card h3{
-  background:#0b0018;
-  padding:10px;
-  border-radius:10px;
-  border:1px solid #26004d;
-  text-align:center;
-}
-  .card-content{
-  border-top:1px solid #26004d;
-}
-  .card:hover{
-  border-color:#7a00ff;
-  box-shadow:
-    inset 0 0 0 1px #7a00ff55,
-    0 0 35px #7a00ff30;
-  transform: translateY(-4px);
-}
-  .card{
-  position: relative;
-  background: linear-gradient(180deg,#140022,var(--card));
-  border-radius:16px;
-  overflow:hidden;
-  border:1.5px solid #2b0055;
-  box-shadow:
-    inset 0 0 0 1px #1a0033,
-    0 0 22px #3a006620;
-  transition: .25s ease;
-}
+
 .status span{
   width:10px;
   height:10px;
@@ -191,10 +108,17 @@ h1,h2,h3{
   box-shadow:0 0 20px var(--purple2);
 }
 
-.section{
-  margin-top:90px;
+/* SECTIONS */
+.section{margin-top:90px}
+
+h2{color:var(--purple2)}
+
+.list li{
+  margin:12px 0;
+  color:#dcdcdc;
 }
 
+/* KARTLAR */
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -203,13 +127,41 @@ h1,h2,h3{
 
 .card{
   background:linear-gradient(180deg,#140022,var(--card));
-  padding:30px;
   border-radius:16px;
-  border:1px solid #26004d;
-  box-shadow:0 0 25px #3a006620;
+  border:1.5px solid #2b0055;
+  box-shadow:0 0 22px #3a006620;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  transition:.25s ease;
+}
+
+.card:hover{
+  border-color:#7a00ff;
+  box-shadow:0 0 35px #7a00ff30;
+  transform:translateY(-4px);
+}
+
+.card-img{
+  height:220px;
+  object-fit:contain;
+  background:#0b0b16;
+}
+
+.card-content{
+  padding:30px;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  border-top:1px solid #26004d;
 }
 
 .card h3{
+  background:#0b0018;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #26004d;
+  text-align:center;
   color:#d39cff;
 }
 
@@ -219,8 +171,8 @@ h1,h2,h3{
   margin:18px 0;
 }
 
-.card a{
-  display:block;
+.card-content a{
+  margin-top:auto;
   text-align:center;
   padding:14px;
   background:var(--purple);
@@ -229,62 +181,12 @@ h1,h2,h3{
   text-decoration:none;
   font-weight:bold;
 }
-  
-  .cards{
-  grid-template-columns:repeat(3,1fr);
-}
 
-  /* VİDEOLU LOGO – HERO */
-.logo-video{
-  width:140px;
-  max-width:60%;
-  margin:0 auto 20px;
-  display:block;
-  filter: drop-shadow(0 0 25px #7a00ff60);
-  border-radius:12px;
-}
-
-/* HAFİF PREMIUM HAREKET */
-.logo-video{
-  animation: float 4s ease-in-out infinite;
-}
-
-@keyframes float{
-  0%,100%{ transform:translateY(0); }
-  50%{ transform:translateY(-6px); }
-}
-
-  .card{
-  padding:0;
-  overflow:hidden;
-}
-
-.card a:hover{
+.card-content a:hover{
   background:var(--purple2);
-  
 }
 
-  .card-content{
-  padding:30px;
-    
-}
-
-
-  .card-img{
-  width:100%;
-  height:auto;
-  max-height:240px;
-  object-fit:contain;
-  display:block;
-  background:#0b0b16;
-
-}
-
-.list li{
-  margin:12px 0;
-  color:#dcdcdc;
-}
-
+/* TRUST */
 .trust{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -298,105 +200,117 @@ h1,h2,h3{
   border:1px solid #2b0055;
 }
 
-<style>
-.container{
-  max-width:1100px;
-  margin:0 auto;
-  padding:40px 20px;
-
+/* FOOTER */
+.footer{
+  margin-top:120px;
+  padding:40px;
+  text-align:center;
+  color:#888;
+  border-top:1px solid #26004d;
 }
-  
 </style>
-<div class="section">
-  <h2>Sistem Özellikleri</h2>
-  <ul class="list">
-    <li>✔ %100 Dijital Teslimat</li>
-    <li>✔ Anında Discord Destek</li>
-    <li>✔ Sorunsuz & Güvenli Alışveriş</li>
-    <li>✔ Aktif ve Online Satıcı</li>
-  </ul>
-</div>
+</head>
 
-<!-- ÜRÜNLER -->
-<div class="section">
-  <h2>Satış Paketleri</h2>
-  <div class="cards">
-    
-    <div class="card">
-  <img src="pubgfoto2.jpeg" class="card-img">
+<body>
 
-  <div class="card-content">
-    <h3>⚡ PUBG MOBILE ANDROID HACK</h3>
-    <p>1 SEZON</p>
-    <div class="price">700 TL</div>
-    <p>SINIRSIZ</p>
-    <div class="price">1400 TL</div>
-    <a href="https://discord.gg/BavNPK942y">SATIN AL</a>
-  </div>
-</div>
+<div class="container">
 
-  <div class="card">
-  <img src="PUBGEMULATOR.jpg" class="card-img">
+  <!-- HERO -->
+  <div class="hero">
+    <video class="logo-video" autoplay muted loop playsinline>
+      <source src="WhatsApp Video 2026-01-20 at 01.53.41.mp4" type="video/mp4">
+    </video>
 
-  <div class="card-content">
-    <h3>⚡ PUBG MOBILE EMULATOR HACK</h3>
-    <p>HAFTALIK</p>
-    <div class="price">400 TL</div>
-    <p>AYLIK</p>
-    <div class="price">900 TL</div>
-    <p>SINIRSIZ</p>
-    <div class="price">4000 TL</div>
-    <a href="https://discord.gg/BavNPK942y">SATIN AL</a>
-  </div>
-</div>
+    <h1>ZENTRA MARKET</h1>
+    <p>Discord üzerinden profesyonel dijital satış</p>
 
-    <div class="card">
-  <img src="IMG_0110.jpg" class="card-img">
-
-  <div class="card-content">
-    <h3>⚡ PUBG MOBILE İOS HACK</h3>
-    <p>GÜNLÜK</p>
-    <div class="price">300 TL</div>
-    <p>HAFTALIK</p>
-    <div class="price">700 TL</div>
-    <p>AYLIK</p>
-    <div class="price">1100 TL</div>
-    <a href="https://discord.gg/BavNPK942y">SATIN AL</a>
-  </div>
-</div>
-
-
-  </div>
-</div>
-
-<!-- GÜVEN -->
-<div class="section">
-  <h2>Neden Güvenmelisin?</h2>
-
-  <div class="trust">
-    <div>
-      <h3>🛡️ Yıllardır Bu İşteyiz</h3>
-      <p>Uzun süredir dijital satış sektöründe aktif olarak hizmet veriyoruz.</p>
+    <div class="status">
+      <span></span> ONLINE • SATIŞ AKTİF
     </div>
 
-    <div>
-      <h3>⚙️ Sürekli Destek</h3>
-      <p>Satış sonrası da yalnız bırakmıyoruz, her zaman online destek.</p>
+    <a href="https://discord.gg/BavNPK942y" class="btn">DİSCORD'A KATIL</a>
+  </div>
+
+  <!-- SİSTEM -->
+  <div class="section">
+    <h2>Sistem Özellikleri</h2>
+    <ul class="list">
+      <li>✔ %100 Dijital Teslimat</li>
+      <li>✔ Anında Discord Destek</li>
+      <li>✔ Sorunsuz & Güvenli Alışveriş</li>
+      <li>✔ Aktif ve Online Satıcı</li>
+    </ul>
+  </div>
+
+  <!-- ÜRÜNLER -->
+  <div class="section">
+    <h2>Satış Paketleri</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="pubgfoto2.jpg" class="card-img">
+        <div class="card-content">
+          <h3>⚡ PUBG MOBILE ANDROID HACK</h3>
+          <p>1 SEZON</p>
+          <div class="price">700 TL</div>
+          <p>SINIRSIZ</p>
+          <div class="price">1400 TL</div>
+          <a href="#">SATIN AL</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="PUBGEMULATOR.jpg" class="card-img">
+        <div class="card-content">
+          <h3>⚡ PUBG MOBILE EMULATOR HACK</h3>
+          <p>HAFTALIK</p>
+          <div class="price">400 TL</div>
+          <p>AYLIK</p>
+          <div class="price">900 TL</div>
+          <p>SINIRSIZ</p>
+          <div class="price">4000 TL</div>
+          <a href="#">SATIN AL</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="IMG_0110.jpg" class="card-img">
+        <div class="card-content">
+          <h3>⚡ PUBG MOBILE iOS HACK</h3>
+          <p>GÜNLÜK</p>
+          <div class="price">300 TL</div>
+          <p>HAFTALIK</p>
+          <div class="price">700 TL</div>
+          <p>AYLIK</p>
+          <div class="price">1100 TL</div>
+          <a href="#">SATIN AL</a>
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
 
-<!-- İLETİŞİM -->
-<div class="section">
-  <h2>Satın Alma & Destek</h2>
-  <p>Tüm işlemler Discord sunucumuz üzerinden yapılır.</p>
-  <a href="https://discord.gg/BavNPK942y" class="btn">SUNUCUYA GİR</a>
-</div>
+  <!-- GÜVEN -->
+  <div class="section">
+    <h2>Neden Güvenmelisin?</h2>
+    <div class="trust">
+      <div>
+        <h3>🛡️ Yıllardır Bu İşteyiz</h3>
+        <p>Uzun süredir dijital satış sektöründe aktif hizmet.</p>
+      </div>
+      <div>
+        <h3>⚙️ Sürekli Destek</h3>
+        <p>Satış sonrası da online destek.</p>
+      </div>
+    </div>
+  </div>
 
-</div> <!-- container kapanışı -->
+</div>
 
 <div class="footer">
-  © 2026 ZENTRA
+© 2026 ZENTRA<br>
+Unauthorized copying, distribution or reuse is prohibited.
 </div>
 
 </body>
