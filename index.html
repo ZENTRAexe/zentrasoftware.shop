@@ -184,6 +184,25 @@ h1,h2,h3{
   grid-template-columns:repeat(3,1fr);
 }
 
+  /* VİDEOLU LOGO – HERO */
+.logo-video{
+  width:140px;
+  max-width:60%;
+  margin:0 auto 20px;
+  display:block;
+  filter: drop-shadow(0 0 25px #7a00ff60);
+  border-radius:12px;
+}
+
+/* HAFİF PREMIUM HAREKET */
+.logo-video{
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{ transform:translateY(0); }
+  50%{ transform:translateY(-6px); }
+}
 
   .card{
   padding:0;
@@ -245,6 +264,11 @@ h1,h2,h3{
 <div class="hero">
   <h1>ZENTRA MARKET</h1>
   <p>Discord üzerinden profesyonel dijital satış</p>
+
+  <video class="logo-video" autoplay muted loop playsinline>
+  <source src="WhatsApp Video 2026-01-20 at 01.53.41.mp4" type="video/mp4">
+</video>
+
 
   <div class="status">
     <span></span> ONLINE • SATIŞ AKTİF
