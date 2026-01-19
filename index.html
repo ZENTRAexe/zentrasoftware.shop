@@ -1,9 +1,28 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<title>ZENTRA MARKET</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<!-- HERO -->
+<div class="hero">
+
+  <!-- ARKA PLAN BLUR VIDEO -->
+  <video class="hero-bg-video" autoplay muted loop playsinline>
+    <source src="WhatsApp Video 2026-01-20 at 01.53.41.mp4" type="video/mp4">
+  </video>
+
+  <!-- ÖN PLAN LOGO -->
+  <video class="logo-video" autoplay muted loop playsinline>
+    <source src="WhatsApp Video 2026-01-20 at 01.53.41.mp4" type="video/mp4">
+  </video>
+
+  <h1>ZENTRA MARKET</h1>
+  <p>Discord üzerinden profesyonel dijital satış</p>
+
+  <div class="status">
+    <span></span> ONLINE • SATIŞ AKTİF
+  </div>
+
+  <br>
+  <a href="https://discord.gg/BavNPK942y" class="btn">DİSCORD'A KATIL</a>
+
+</div>
+
 
 <style>
 :root{
@@ -13,6 +32,40 @@
   --purple2:#b100ff;
   --text:#eaeaea;
   --green:#00ff9c;
+}
+  /* ÇERÇEVELİ HERO ALANI */
+.hero{
+  position:relative;
+  margin:40px auto;
+  max-width:1100px;
+  padding:80px 20px;
+  border-radius:22px;
+  border:1.5px solid #2b0055;
+  box-shadow:
+    inset 0 0 0 1px #1a0033,
+    0 0 40px #3a006640;
+  overflow:hidden;
+  background:#07070c;
+}
+
+/* BLUR’LU ARKA PLAN VIDEO */
+.hero-bg-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0.10;
+  filter: blur(22px) saturate(120%);
+  transform: scale(1.25);
+  pointer-events:none;
+  z-index:0;
+}
+
+/* ÖN PLAN İÇERİK */
+.hero > *{
+  position:relative;
+  z-index:1;
 }
 
 *{box-sizing:border-box}
