@@ -31,7 +31,7 @@ body{
   padding:40px 20px;
 }
 
-/* HERO (VİDEOSUZ) */
+/* HERO */
 .hero{
   text-align:center;
   padding:55px 20px;
@@ -94,7 +94,19 @@ body{
 
 /* SECTIONS */
 .section{margin-top:80px}
-h2{color:var(--purple2)}
+h2{
+  color:var(--purple2);
+  text-align:center;
+}
+
+/* SİSTEM ÖZELLİKLERİ KUTUSU */
+.system-box{
+  background:linear-gradient(180deg,#140022,var(--card));
+  padding:30px;
+  border-radius:18px;
+  border:1.5px solid #2b0055;
+  box-shadow:0 0 18px #3a006620;
+}
 
 .list li{
   margin:12px 0;
@@ -169,11 +181,12 @@ h2{color:var(--purple2)}
   background:var(--purple2);
 }
 
-/* TRUST */
+/* NEDEN BİZ ? */
 .trust{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
   gap:25px;
+  margin-top:30px;
 }
 
 .trust div{
@@ -189,6 +202,11 @@ h2{color:var(--purple2)}
   border-color:#7a00ff;
   box-shadow:0 0 35px #7a00ff30;
   transform:translateY(-4px);
+}
+
+.trust h3{
+  text-align:center;
+  color:#d39cff;
 }
 
 /* FOOTER */
@@ -219,8 +237,8 @@ h2{color:var(--purple2)}
   </div>
 
   <!-- SİSTEM -->
-  <div class="section">
-    <h2>NEDEN BİZ?</h2>
+  <div class="section system-box">
+    <h2>Sistem Özellikleri</h2>
     <ul class="list">
       <li>✔ %100 Dijital Teslimat</li>
       <li>✔ Anında Discord Destek</li>
@@ -278,17 +296,17 @@ h2{color:var(--purple2)}
     </div>
   </div>
 
-  <!-- GÜVEN -->
+  <!-- NEDEN BİZ ? -->
   <div class="section">
-    <h2>Neden Güvenmelisin?</h2>
+    <h2>NEDEN BİZ ?</h2>
     <div class="trust">
       <div>
-        <h3>🛡️ Yıllardır Bu İşteyiz</h3>
-        <p>Uzun süredir dijital satış sektöründe aktif hizmet.</p>
+        <h3>🛡️ Güvenilir Satıcı</h3>
+        <p>Uzun süredir dijital satış sektöründe aktif ve güvenilir hizmet.</p>
       </div>
       <div>
-        <h3>⚙️ Sürekli Destek</h3>
-        <p>Satış sonrası da online destek.</p>
+        <h3>⚙️ Satış Sonrası Destek</h3>
+        <p>Satın aldıktan sonra da birebir destek sağlıyoruz.</p>
       </div>
     </div>
   </div>
