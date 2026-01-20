@@ -24,22 +24,18 @@ body{
   color:var(--text);
 }
 
-/* ORTALAYICI */
 .container{
   max-width:1100px;
   margin:0 auto;
   padding:40px 20px;
 }
 
-/* HERO */
 .hero{
   text-align:center;
   padding:55px 20px;
   border-radius:22px;
   border:1.5px solid #2b0055;
-  box-shadow:
-    inset 0 0 0 1px #1a0033,
-    0 0 40px #3a006640;
+  box-shadow: inset 0 0 0 1px #1a0033, 0 0 40px #3a006640;
   background:#07070c;
   margin-bottom:70px;
 }
@@ -84,22 +80,15 @@ body{
   text-decoration:none;
   font-weight:bold;
   border-radius:10px;
-  transition:.2s;
 }
 
-.btn:hover{
-  transform:scale(1.06);
-  box-shadow:0 0 18px var(--purple2);
-}
-
-/* SECTIONS */
 .section{margin-top:80px}
+
 h2{
   color:var(--purple2);
   text-align:center;
 }
 
-/* ÜRÜN KARTLARI */
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -114,13 +103,6 @@ h2{
   overflow:hidden;
   display:flex;
   flex-direction:column;
-  transition:.25s ease;
-}
-
-.card:hover{
-  border-color:#7a00ff;
-  box-shadow:0 0 35px #7a00ff30;
-  transform:translateY(-4px);
 }
 
 .card-img{
@@ -147,18 +129,9 @@ h2{
 }
 
 .price{
-  font-size:28px;
+  font-size:26px;
   color:var(--green);
-  margin:18px 0;
-}
-  .logo-video{
-  width:120px;
-  margin:0 auto 26px;
-  display:block;
-  border-radius:16px;
-  filter:
-    drop-shadow(0 0 30px #7a00ff80)
-    drop-shadow(0 0 60px #b100ff40);
+  margin:12px 0;
 }
 
 .card-content a{
@@ -172,59 +145,29 @@ h2{
   font-weight:bold;
 }
 
-.card-content a:hover{
-  background:var(--purple2);
+/* VALORANT FEATURES */
+.feature-group{
+  margin-top:18px;
 }
 
-/* NEDEN BİZ */
-.trust{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:25px;
-  margin-top:30px;
+.feature-group h4{
+  color:#b98bff;
+  margin-bottom:8px;
+  font-size:16px;
+  border-bottom:1px solid #2b0055;
+  padding-bottom:4px;
 }
 
-.trust div{
-  background:linear-gradient(180deg,#140022,var(--card));
-  padding:28px;
-  border-radius:16px;
-  border:1.5px solid #2b0055;
-  box-shadow:0 0 22px #3a006620;
-  transition:.25s ease;
-}
-
-.trust div:hover{
-  border-color:#7a00ff;
-  box-shadow:0 0 35px #7a00ff30;
-  transform:translateY(-4px);
-}
-
-.trust h3{
-  text-align:center;
-  color:#d39cff;
-}
-
-/* SİSTEM ÖZELLİKLERİ (BAŞLIKSIZ – GENİŞ KART) */
-.system-wide{
-  margin-top:30px;
-  background:linear-gradient(180deg,#140022,var(--card));
-  padding:30px;
-  border-radius:18px;
-  border:1.5px solid #2b0055;
-  box-shadow:0 0 22px #3a006620;
-}
-
-.system-wide ul{
+.feature-group ul{
   list-style:none;
   padding:0;
   margin:0;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:12px 30px;
 }
 
-.system-wide li{
+.feature-group li{
+  font-size:14px;
   color:#dcdcdc;
+  padding:4px 0;
 }
 
 /* FOOTER */
@@ -242,208 +185,85 @@ h2{
 
 <div class="container">
 
-  <!-- HERO -->
-  <div class="hero">
-  <div class="hero">
-    <h1>ZENTRA MARKET</h1>
-    <p>Discord üzerinden profesyonel dijital satış</p>
+<div class="hero">
+  <h1>ZENTRA MARKET</h1>
+  <p>Discord üzerinden profesyonel dijital satış</p>
+  <div class="status"><span></span> ONLINE • SATIŞ AKTİF</div>
+  <a href="https://discord.gg/BavNPK942y" class="btn">DİSCORD'A KATIL</a>
+</div>
 
-    <div class="status">
-      <span></span> ONLINE • SATIŞ AKTİF
-    </div>
+<div class="section">
+<h2>Satış Paketleri</h2>
 
-    <a href="https://discord.gg/BavNPK942y" class="btn">DİSCORD'A KATIL</a>
-  </div>
+<div class="cards">
 
-  <!-- ÜRÜNLER -->
-  <div class="section">
-    <h2>Satış Paketleri</h2>
+<!-- VALORANT -->
+<div class="card">
+<img src="image.jpg" class="card-img">
+<div class="card-content">
 
-    <div class="cards">
+<h3>⚡ VALORANT SLOTTED</h3>
 
-      <div class="card">
-        <img src="pubgfoto2.jpeg" class="card-img">
-        <div class="card-content">
-          <h3>⚡ PUBG MOBILE ANDROID HACK</h3>
-          <p>1 SEZON</p>
-          <div class="price">700 TL</div>
-          <p>SINIRSIZ</p>
-          <div class="price">1400 TL</div>
-          <a href="https://discord.gg/BavNPK942y" target="_blank">SATIN AL</a>
-        </div>
-      </div>
+<div class="feature-group">
+<h4>Aim</h4>
+<ul>
+<li>Aimbot (Toggle)</li>
+<li>Silent Aim</li>
+<li>No Spread</li>
+<li>Recoil Control</li>
+<li>Auto Shoot</li>
+<li>FOV & Smoothness Ayarı</li>
+</ul>
+</div>
 
-      <div class="card">
-        <img src="PUBGEMULATOR.jpg" class="card-img">
-        <div class="card-content">
-          <h3>⚡ PUBG MOBILE EMULATOR HACK</h3>
-          <p>HAFTALIK</p>
-          <div class="price">400 TL</div>
-          <p>AYLIK</p>
-          <div class="price">900 TL</div>
-          <p>SINIRSIZ</p>
-          <div class="price">4000 TL</div>
-          <a href="https://discord.gg/BavNPK942y" target="_blank">SATIN AL</a>
-        </div>
-      </div>
+<div class="feature-group">
+<h4>Visuals (ESP)</h4>
+<ul>
+<li>Box / Skeleton ESP</li>
+<li>Health & Armor Bar</li>
+<li>Weapon & Agent Icon</li>
+<li>Snapline</li>
+<li>Radar</li>
+<li>Spike & Ability ESP</li>
+</ul>
+</div>
 
-      <div class="card">
-        <img src="IMG_0110.jpg" class="card-img">
-        <div class="card-content">
-          <h3>⚡ PUBG MOBILE iOS HACK</h3>
-          <p>GÜNLÜK</p>
-          <div class="price">300 TL</div>
-          <p>HAFTALIK</p>
-          <div class="price">700 TL</div>
-          <p>AYLIK</p>
-          <div class="price">1100 TL</div>
-          <a href="https://discord.gg/BavNPK942y" target="_blank">SATIN AL</a>
-        </div>
-      </div>
+<div class="feature-group">
+<h4>World / Effects</h4>
+<ul>
+<li>Night Mode</li>
+<li>Skybox Changer</li>
+<li>Galaxy / Rainbow Effects</li>
+<li>Wireframe</li>
+</ul>
+</div>
 
-      <div class="card">
-        <img src="image.jpg" class="card-img">
-        <div class="card-content">
-          <h3>⚡ VALORANT SLOTTED
-          Features
-Aim
-• Enable: Toggle the aimbot on/off.
-• Recoil Control
-• Visible Check
-• No Spread
-• Auto Shoot (rage)
-• Show FOV
-• Field Of View
-• Smoothness
-• Aim Bone
-• Anti-Aim
-• Silent Aim
-• Show FOV Rainbow
-• Smoothness Slider
-• Auto Shoot Speed Slider
-• Recoil Crosshair
-• Select Aimbone (Head,Chest,Legs)
+<div class="feature-group">
+<h4>Misc</h4>
+<ul>
+<li>Unlock All</li>
+<li>Finishers</li>
+<li>Gun Buddy Changer</li>
+<li>Anti-Flash</li>
+<li>No Smoke</li>
+<li>Config Save / Load</li>
+</ul>
+</div>
 
-Visuals
-• Box ESP
-• Box Type (dropdown: 3D Box)
-• Skeleton
-• Head ESP
-• Agent Icon
-• Weapon Icon
-• Distance ESP
-• Enemy Fresnel
-• Health + Armor Bar
-• Snapline
-• Minimap Radar
-• Load Skin
-• Custom Icon
-• Bullet Trace
-• World:
-• Spike Info
-• Abilities ESP
-• ESP Settings:
-• Fresnel Red (slider)
-• Fresnel Green (slider)
-• Fresnel Blue (slider)
-• Fresnel Intensity (slider)
-• Anti-Aim
-• Spike Info
-• Abilities ESP
-• Night Mode
-• Devil Mode
-• Apply Wukong
-• Skybox Changer
-• Live Sky
-• Rainbow Sky
-• Galaxy Gun
-• China Hat
-• China Hat Enemy
-• Gun Wireframe
-• Third Person Wireframe
-• Name ESP
+<p>3 GÜNLÜK</p>
+<div class="price">1500 TL</div>
+<p>1 HAFTA</p>
+<div class="price">3050 TL</div>
+<p>1 AYLIK</p>
+<div class="price">4350 TL</div>
 
-Outlines
-• Eneable Enemy Chams
-• Galaxy Enemy
-• Self Galaxy
-• Type (Always Outline)
-• Intensity
-• Intensity Visible
-• Intensity Invisible
-• Rainbow Speed
-• Hand Fresnel
-• Rainbow Color
+<a href="https://discord.gg/BavNPK942y" target="_blank">SATIN AL</a>
 
-Misc
-• Config System Save/Load Config
-• Unlock All
-• Finisher
-• Use Buddy Changer
-• Buddy IDs
-• Skip Tutorial
-• Wireframe Hand
-• Custom Aspect Ratio
-• Aspect Ratio
-• Custom Local FOV
-• Field Of View
-• Viewmodel Changer
-• Viewmodel Value
-• Anti-Aim
-• Enemy Chams
-• Hand Fresnel
-• China Hat
-• China Hat Enemy
-• Kill Say
-• No Smoke/Walls
-• Third Person
-• Big Gun 3P
-• Anti-Flash
-• Unlock All
-• Finishers
-• Last Kill Finisher
-• Gun Buddy Changer</h3>
-          <p>3 GÜNLÜK</p>
-          <div class="price">1500 TL</div>
-          <p>1 HAFTA</p>
-          <div class="price">3050 TL</div>
-          <p>1 AYLIK</p>
-          <div class="price">4350 TL</div>
-          <p>1 AYLIK</p>
-          <div class="price">15200 TL</div>
-          <a href="https://discord.gg/BavNPK942y" target="_blank">SATIN AL</a>
-        </div>
-      </div>
+</div>
+</div>
 
-    </div>
-  </div>
-
-  <!-- NEDEN BİZ -->
-  <div class="section">
-    <h2>NEDEN BİZ ?</h2>
-
-    <div class="trust">
-      <div>
-        <h3>🛡️ Güvenilir Satıcı</h3>
-        <p>Uzun süredir dijital satış sektöründe aktif ve güvenilir hizmet.</p>
-      </div>
-      <div>
-        <h3>⚙️ Satış Sonrası Destek</h3>
-        <p>Satın aldıktan sonra da birebir destek sağlıyoruz.</p>
-      </div>
-    </div>
-
-    <!-- SİSTEM ÖZELLİKLERİ (BAŞLIKSIZ) -->
-    <div class="system-wide">
-      <ul>
-        <li>✔ %100 Dijital Teslimat</li>
-        <li>✔ Anında Discord Destek</li>
-        <li>✔ Sorunsuz & Güvenli Alışveriş</li>
-        <li>✔ Aktif ve Online Satıcı</li>
-      </ul>
-    </div>
-
-  </div>
+</div>
+</div>
 
 </div>
 
