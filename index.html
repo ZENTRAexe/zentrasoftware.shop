@@ -99,21 +99,7 @@ h2{
   text-align:center;
 }
 
-/* SİSTEM ÖZELLİKLERİ KUTUSU */
-.system-box{
-  background:linear-gradient(180deg,#140022,var(--card));
-  padding:30px;
-  border-radius:18px;
-  border:1.5px solid #2b0055;
-  box-shadow:0 0 18px #3a006620;
-}
-
-.list li{
-  margin:12px 0;
-  color:#dcdcdc;
-}
-
-/* KARTLAR */
+/* ÜRÜN KARTLARI */
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -181,7 +167,7 @@ h2{
   background:var(--purple2);
 }
 
-/* NEDEN BİZ ? */
+/* NEDEN BİZ */
 .trust{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -209,6 +195,29 @@ h2{
   color:#d39cff;
 }
 
+/* SİSTEM ÖZELLİKLERİ (BAŞLIKSIZ – GENİŞ KART) */
+.system-wide{
+  margin-top:30px;
+  background:linear-gradient(180deg,#140022,var(--card));
+  padding:30px;
+  border-radius:18px;
+  border:1.5px solid #2b0055;
+  box-shadow:0 0 22px #3a006620;
+}
+
+.system-wide ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:12px 30px;
+}
+
+.system-wide li{
+  color:#dcdcdc;
+}
+
 /* FOOTER */
 .footer{
   margin-top:120px;
@@ -234,17 +243,6 @@ h2{
     </div>
 
     <a href="https://discord.gg/BavNPK942y" class="btn">DİSCORD'A KATIL</a>
-  </div>
-
-  <!-- SİSTEM -->
-  <div class="section system-box">
-    <h2>Sistem Özellikleri</h2>
-    <ul class="list">
-      <li>✔ %100 Dijital Teslimat</li>
-      <li>✔ Anında Discord Destek</li>
-      <li>✔ Sorunsuz & Güvenli Alışveriş</li>
-      <li>✔ Aktif ve Online Satıcı</li>
-    </ul>
   </div>
 
   <!-- ÜRÜNLER -->
@@ -296,9 +294,10 @@ h2{
     </div>
   </div>
 
-  <!-- NEDEN BİZ ? -->
+  <!-- NEDEN BİZ -->
   <div class="section">
     <h2>NEDEN BİZ ?</h2>
+
     <div class="trust">
       <div>
         <h3>🛡️ Güvenilir Satıcı</h3>
@@ -309,6 +308,17 @@ h2{
         <p>Satın aldıktan sonra da birebir destek sağlıyoruz.</p>
       </div>
     </div>
+
+    <!-- SİSTEM ÖZELLİKLERİ (BAŞLIKSIZ) -->
+    <div class="system-wide">
+      <ul>
+        <li>✔ %100 Dijital Teslimat</li>
+        <li>✔ Anında Discord Destek</li>
+        <li>✔ Sorunsuz & Güvenli Alışveriş</li>
+        <li>✔ Aktif ve Online Satıcı</li>
+      </ul>
+    </div>
+
   </div>
 
 </div>
