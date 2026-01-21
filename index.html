@@ -149,98 +149,78 @@ body{
   color:#00ff9c;
   font-weight:bold;
   padding:4px 0
-}
-
-/* FOOTER */
-.footer{
-  margin-top:100px;
-  padding:40px;
-  text-align:center;
-  color:#888;
-  border-top:1px solid #26004d
-}
-  /* LOGO */
-/* STATİK LOGO – BÜYÜK + NEON ÇERÇEVE */
-.logo{
-  width:120px;                /* ⬅️ büyütüldü */
-  padding:14px;
-  margin-bottom:24px;
-  border-radius:18px;
-
-  border:1.6px solid rgba(122, 0, 255, 0.9);
-  box-shadow:
-    0 0 18px rgba(122, 0, 255, 0.7),
-    inset 0 0 12px rgba(122, 0, 255, 0.45);
-
-  background:#0b0018;
-  pointer-events:none;
-}
-
-/* FLOAT ANİMASYON */
-@keyframes float{
-  0%{transform:translateY(0)}
-  50%{transform:translateY(-8px)}
-  100%{transform:translateY(0)}
-  
   }
-  /* TRUST SECTION */
+/* TRUST SECTION */
 .trust-section{
-  margin-top:100px;
+  margin-top:120px;
+  padding:70px 25px;
   text-align:center;
+  border-radius:24px;
+  border:1.5px solid #2b0055;
+  box-shadow:0 0 45px #3a006660;
 }
 
 .trust-section h2{
   color:#d39cff;
-  margin-bottom:40px;
-  font-size:32px;
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.trust-sub{
+  color:#bfbfbf;
+  margin-bottom:55px;
+  font-size:15px;
 }
 
 /* GRID */
 .trust-cards{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:32px;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
 }
 
-@media(max-width:900px){
-  .trust-cards{
-    grid-template-columns:1fr;
-  }
+@media(max-width:1000px){
+  .trust-cards{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+  .trust-cards{grid-template-columns:1fr;}
 }
 
-/* TRUST CARD – NEON */
+/* CARD */
 .trust-card{
   background:linear-gradient(180deg,#140022,#0f0f1f);
-  padding:30px;
-  border-radius:18px;
-
-  border:1.5px solid rgba(122,0,255,0.6);
+  padding:30px 24px;
+  border-radius:20px;
+  border:1.5px solid rgba(122,0,255,.6);
   box-shadow:
-    0 0 14px rgba(122,0,255,0.3),
-    inset 0 0 10px rgba(122,0,255,0.18);
-
-  transition: all 0.35s ease;
+    0 0 18px rgba(122,0,255,.35),
+    inset 0 0 12px rgba(122,0,255,.2);
+  transition:all .35s ease;
 }
 
-/* HOVER – HAREKET + GLOW */
 .trust-card:hover{
-  transform: translateY(-8px) scale(1.03);
-  border-color: rgba(177,0,255,0.9);
+  transform:translateY(-10px) scale(1.04);
+  border-color:rgba(177,0,255,.95);
   box-shadow:
-    0 0 28px rgba(177,0,255,0.7),
-    inset 0 0 14px rgba(177,0,255,0.35);
+    0 0 34px rgba(177,0,255,.8),
+    inset 0 0 18px rgba(177,0,255,.35);
 }
 
-/* TEXT */
+.trust-icon{
+  font-size:36px;
+  display:block;
+  margin-bottom:16px;
+}
+
 .trust-card h3{
   color:#00ff9c;
-  margin-bottom:12px;
+  margin-bottom:10px;
   font-size:18px;
 }
 
 .trust-card p{
-  font-size:14.5px;
   color:#dcdcdc;
+  font-size:14.5px;
   line-height:1.6;
 }
 </style>
