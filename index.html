@@ -188,6 +188,66 @@ body{
   .logo{
     width:85px;
   }
+  /* TRUST SECTION */
+.trust-section{
+  margin-top:100px;
+  text-align:center;
+}
+
+.trust-section h2{
+  color:#d39cff;
+  margin-bottom:40px;
+  font-size:32px;
+}
+
+/* GRID */
+.trust-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
+}
+
+@media(max-width:900px){
+  .trust-cards{
+    grid-template-columns:1fr;
+  }
+}
+
+/* TRUST CARD – NEON */
+.trust-card{
+  background:linear-gradient(180deg,#140022,#0f0f1f);
+  padding:30px;
+  border-radius:18px;
+
+  border:1.5px solid rgba(122,0,255,0.6);
+  box-shadow:
+    0 0 14px rgba(122,0,255,0.3),
+    inset 0 0 10px rgba(122,0,255,0.18);
+
+  transition: all 0.35s ease;
+}
+
+/* HOVER – HAREKET + GLOW */
+.trust-card:hover{
+  transform: translateY(-8px) scale(1.03);
+  border-color: rgba(177,0,255,0.9);
+  box-shadow:
+    0 0 28px rgba(177,0,255,0.7),
+    inset 0 0 14px rgba(177,0,255,0.35);
+}
+
+/* TEXT */
+.trust-card h3{
+  color:#00ff9c;
+  margin-bottom:12px;
+  font-size:18px;
+}
+
+.trust-card p{
+  font-size:14.5px;
+  color:#dcdcdc;
+  line-height:1.6;
+}
 </style>
 </head>
 
